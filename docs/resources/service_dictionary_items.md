@@ -237,6 +237,8 @@ The resource ID is a combined value of the `service_id` and `dictionary_id` sepa
 $ terraform import fastly_service_dictionary_items.items xxxxxxxxxxxxxxxxxxxx/xxxxxxxxxxxxxxxxxxxx
 ```
 
+Note: dictionary resource should be empty before importing.
+
 If Terraform is already managing remote dictionary items against a resource being imported then the user will be asked to remove it from the existing Terraform state.
 The following is an example of the Terraform state command to remove the resource named `fastly_service_dictionary_items.items` from the Terraform state file.
 
